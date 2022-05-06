@@ -1,0 +1,35 @@
+body
+{
+background: linear-gradient(to bottom left,red,orange,yellow);
+font-family: 'Courier New', Courier, monospace;
+font-size:  medium;    
+}
+h1
+{
+ color: #355ba1;
+ background-color: bisque;   
+}
+
+#show_sketch
+{
+  float: right;  
+}
+
+canvas
+{
+ border:5px solid blue;
+ border-radius: 20px;
+ animation-name: glow;
+ animation-duration: 20s;
+ margin-top: 50px;
+ animation-iteration-count: infinite;   
+}
+
+@keyframes glow {
+  0%{box-shadow:1px 1px 48px turquoise;} 
+  20%{box-shadow:1px 1px 48px lawngreen}
+  40%{box-shadow:1px 1px 48px peachpuff}
+  60%{box-shadow:1px 1px 48px royalblue;}
+  80%{box-shadow:1px 1px 48px fuchsia;}
+  100%{box-shadow:1px 1px 48px black;}  
+}
